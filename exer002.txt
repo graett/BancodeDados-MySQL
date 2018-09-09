@@ -1,0 +1,37 @@
+//Criar um banco de dados com nome Biblioteca.
+//Criar 3 tabelas com os nomes: 
+//Livro(NR,Titulo, Autor e Preço)
+//Leitor (Cod, Nome, CPOST e Cidade)
+//Req (Liv, Lei, Datar, Datae)
+//Criar chaves primárias nas 3 tabelas.
+//Criar 2 chaves estrangeiras na tabela Req.
+
+
+CREATE DATABASE Biblioteca;
+
+
+CREATE TABLE Livro (
+    NR INT(4) NOT NULL,
+    Titulo VARCHAR (20) NOT NULL,
+    Autor VARCHAR (20),
+    Preco FLOAT (4,2),
+    PRIMARY KEY (NR)
+);
+
+CREATE TABLE Leitor (
+    Cod INT(4) NOT NULL,
+    Nome VARCHAR(20) NOT NULL,
+    CPOST INT(4),
+    Cidade VARCHAR(20),
+    PRIMARY KEY (Cod)
+);
+
+CREATE TABLE Req (
+    Liv INT(4) NOT NULL,
+    Lei INT(4) NOT NULL,
+    Datar DATE,
+    Datae DATE,
+    PRIMARY KEY (DATAR),
+    FOREIGN KEY (Liv) REFERENCES Livro(NR),
+    FOREIGN KEY (Lei) REFERENCES Leitor(Cod)
+    );
