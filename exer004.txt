@@ -1,0 +1,8 @@
+//Usar o comando SELECT para visualizar todas as informações 
+//inseridas nas tabelas do BD Biblioteca.
+
+SELECT * FROM livro;
+
+SELECT * FROM leitor;
+
+SELECT * FROM req;
