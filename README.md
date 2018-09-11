@@ -14,3 +14,5 @@ Exer002 - Criar um banco de dados chamado Biblioteca com 3 tabelas. Criar chaves
 Exer003 - Utilizar o comando INSERT e adicionar informações variadas nas tabelas criadas dentro do BD Biblioteca.
 
 Exer004 - Utilizar o comando SELEC para visualizar todo o conteúdo das 3 tabelas do BD Biblioteca.
+
+Exer005 - Usos variados do comando SELECT dentro do BD Biblioteca.
