@@ -1,0 +1,9 @@
+//1.Selecionar a tabela req e as colunas liv, lei, datar e datae.
+//2.Selecionar registros de datas que duram menos de 10 dias.
+//3.Agrupar esse intervalo de tempo na exibição em um campo chamado Duração.
+
+
+
+SELECT * FROM req;
+SELECT datar, datae FROM req WHERE (datae - datar) <= 10;
+SELECT liv, Lei, Datae-Datar'Duração' FROM req WHERE (Datae-Datar) <=10;
