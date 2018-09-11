@@ -16,3 +16,5 @@ Exer003 - Utilizar o comando INSERT e adicionar informações variadas nas tabel
 Exer004 - Utilizar o comando SELEC para visualizar todo o conteúdo das 3 tabelas do BD Biblioteca.
 
 Exer005 - Usos variados do comando SELECT dentro do BD Biblioteca.
+
+Exer006 - No BD Biblioteca, na tabela req, selecionar os registros de datas que duram menos de 10 dias. Usando o Select, agrupar esse intervalo de tempo em um campo chamado Duração.
