@@ -1,0 +1,16 @@
+//1.Listar código e nome dos leitores cujo código é menor que 5. 
+//2.Listar o nome e a cidade dos leitores com nome a começar por 'M' e código entre 2 e 5.
+//3.Seleccionar as cidades com código postal superior a 2000. 
+//4.Utilizar o comando DISTINCT e seleccionar as cidades com código postal superior a 1000. 
+//5.Seleccionar os livros do Eça com preço superior a 1000$00 e todos os livros de preço inferior a 750$00 
+//indicando o autor, o título, o preço e o número. 
+
+SELECT cod, nome FROM Leitor WHERE cod <5;
+
+SELECT nome, cidade FROM Leitor WHERE nome like 'M%' AND cod BETWEEN 2 AND 5;
+
+SELECT cidade FROM Leitor WHERE cpost > 2000;
+
+SELECT DISTINCT cidade FROM Leitor WHERE cpost > 1000;
+
+SELECT NR, Titulo, Preco, Autor FROM Livro WHERE Autor LIKE '%ECA%' AND Preco>1000 OR Preco<750;
